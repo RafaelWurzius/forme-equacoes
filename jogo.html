@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Forme Equações</title>
+</head>
+<body>
+    <!-- Tela inicial -->
+    <section class="inicio">
+        <p><h1>FORM3 3QUAÇÕ3S</h1></p>
+
+        <button class="jogar">JOGAR</button>
+
+        <div class="opcoes">
+            <button class="botao_musica"><img src="icones/music.svg" class="icone_musica"></button>
+            <button class="botao_info"><img src="icones/information.svg" class="icone_info"></button>
+        </div>
+
+    </section>
+
+
+    <!-- Tela informações -->
+    <section class="info">
+            <div class="topo">
+                <img class="flechaVoltarMenu" src="icones/left-arrow.svg">
+                <h1>Informações</h1>
+            </div>
+            <div class="descricao">
+                <h1>Como jogar</h1>
+                <p><h2>Depois de selecionar a fase que você deseja, será mostrado no quadro um número a ser chegado e várias opções coloridas logo abaixo que possuirão números e operações matemáticas. Para concluir a fase você deverá tocar nas opções de modo que formem uma equação que resulta no número mostrado.</h2></p>
+            </div>
+    </section>
+
+    <!-- Tela configurações -->
+    <section class="conf">
+        <div class="topo">
+            <img class="flechaVoltarMenu" src="icones/home.svg">
+            <h1>Configurações de áudio</h1>        
+        </div>
+
+        <h1>Música</h1>
+
+        <div class="conf_musica">
+            <button class="musica_lig">Ligada</button>
+            <button class="musica_des">Desligada</button>
+        </div>
+
+        <h1>Volume da música</h1>
+        <div class="vol">
+            <input type="range" id="volMus" min="0" value="0.5" max="1" step="0.1" class="slider">
+        </div>
+      
+        
+        <h1>Som</h1>
+        <div class="conf_musica">
+            <button class="som_lig">Ligado</button>
+            <button class="som_des">Desligado</button>
+        </div>
+
+        <div class="centralizar">
+            <button id="voltarJogo" class="voltarJogo"> Voltar ao Jogo</button>
+        </div>
+
+    </section>
+
+    <!-- Tela níveis -->
+    <section class="fases">
+        <div class="topo">
+            <img class="flechaVoltarMenu" src="icones/left-arrow.svg">
+            <h1>Selecione a fase</h1>
+        </div>
+        <button id="fase1" class="fase1">Fase 1</button>
+        <button id="fase2" class="fase2">Fase 2</button>
+        <button id="fase3" class="fase3">Fase 3</button>
+        <button id="fase4" class="fase4">Fase 4</button>
+        <button id="fase5" class="fase5">Fase 5</button>
+    </section>
+
+    <!-- Tela da fase 1 -->
+    <section class="fase1">
+        <div class="quadro">
+            <h2>Qual equação resulta no número:</h2>
+            <h1><span class="equacao1"></span>= 10</h1>
+            <img src="icones/clock.svg" class="relogio">
+            <span class="temporizadorMin">00</span><h3>:</h3><span class="temporizadorSeg">00</span>
+        </div>
+
+        <div class="operacoes">
+            <button id="btn1" class="errado">+</button>
+            <button id="btn2" class="certo">5</button>
+            <button id="btn3" class="certo">x</button>
+            <button id="btn4" class="errado">9</button>
+            <button id="btn5" class="certo">2</button>
+        </div>
+        <div class="menu_inferior">
+            <button class="voltar"><img src="icones/left-arrow2.svg"></button>
+            <button id="conf1"class="configuracao"><img src="icones/music.svg"></button>
+            <button class="dica"><img src="icones/lamp.svg"></button>
+        </div>
+    </section>
+
+    <!-- Tela da fase 2 -->
+    <section class="fase2">
+        <div class="quadro">
+            <h2>Qual equação resulta no número:</h2>
+            <h1><span class="equacao2"></span>= 23</h1>
+            <img src="icones/clock.svg" class="relogio">
+            <span class="temporizadorMin">00</span><h3>:</h3><span class="temporizadorSeg">00</span>
+        </div>
+
+        <div class="operacoes">
+            <button id="btn6" class="certo">3</button>
+            <button id="btn7" class="certo">5</button>
+            <button id="btn8" class="errado">2</button>
+            <button id="btn9" class="certo">-5</button>
+            <button id="btn10" class="errado">/3</button>
+            <button id="btn11" class="certo">x2</button>
+            <button id="btn12" class="certo">+</button>
+            <button id="btn13" class="errado">1</button>
+        </div>
+        <div class="menu_inferior">
+            <button class="voltar"><img src="icones/left-arrow2.svg"></button>
+            <button id="conf2" class="configuracao"><img src="icones/music.svg"></button>
+            <button class="dica"><img src="icones/lamp.svg"></button>
+        </div>
+    </section>
+
+    <!-- Tela da fase 3 -->
+    <section class="fase3">
+        <div class="quadro">
+            <h2>Qual equação resulta no número:</h2>
+            <h1><span class="equacao3"></span>= 57</h1>
+            <img src="icones/clock.svg" class="relogio">
+            <span class="temporizadorMin">00</span><h3>:</h3><span class="temporizadorSeg">00</span>
+        </div>
+
+        <div class="operacoes">
+            <button id="btn14" class="errado">1</button>
+            <button id="btn15" class="certo">6</button>
+            <button id="btn16" class="errado">x3</button>
+            <button id="btn17" class="certo">-20</button>
+            <button id="btn18" class="errado">+20</button>
+            <button id="btn19" class="certo">x2</button>
+            <button id="btn20" class="certo">+</button>
+            <button id="btn21" class="errado">11</button>
+            <button id="btn22" class="certo">+9</button>
+            <button id="btn23" class="certo">50</button>
+            <button id="btn24" class="errado">x</button>
+            <button id="btn25" class="errado">+</button>
+
+        </div>
+        <div class="menu_inferior">
+            <button class="voltar"><img src="icones/left-arrow2.svg"></button>
+            <button id="conf3" class="configuracao"><img src="icones/music.svg"></button>
+            <button class="dica"><img src="icones/lamp.svg"></button>
+        </div>
+    </section>
+
+    <!-- Tela da fase 4 -->
+    <section class="fase4">
+        <div class="quadro">
+            <h2>Qual equação resulta no número:</h2>
+            <h1><span class="equacao4"></span>= 88</h1>
+            <img src="icones/clock.svg" class="relogio">
+            <span class="temporizadorMin">00</span><h3>:</h3><span class="temporizadorSeg">00</span>
+        </div>
+
+        <div class="operacoes">
+            <button id="btn26" class="certo">11</button>
+            <button id="btn27" class="errado">1</button>
+            <button id="btn28" class="certo">5</button>
+            <button id="btn29" class="certo">X</button>
+            <button id="btn30" class="errado">+11</button>
+            <button id="btn31" class="errado">x2</button>
+            <button id="btn32" class="certo">+21</button>
+            <button id="btn33" class="errado">8</button>
+            <button id="btn34" class="errado">-7</button>
+            <button id="btn35" class="errado">24</button>
+            <button id="btn36" class="certo">+</button>
+            <button id="btn37" class="certo">-5</button>
+            <button id="btn38" class="certo">17</button>
+            <button id="btn39" class="errado">-</button>
+
+        </div>
+        <div class="menu_inferior">
+            <button class="voltar"><img src="icones/left-arrow2.svg"></button>
+            <button id="conf4" class="configuracao"><img src="icones/music.svg"></button>
+            <button class="dica"><img src="icones/lamp.svg"></button>
+        </div>
+    </section>
+
+    <!-- Tela da fase 5 -->
+    <section class="fase5">
+        <div class="quadro">
+            <h2>Qual equação resulta no número:</h2>
+            <h1><span class="equacao5"></span>= 198</h1>
+            <img src="icones/clock.svg" class="relogio">
+            <span class="temporizadorMin">00</span><h3>:</h3><span class="temporizadorSeg">00</span>
+        </div>
+
+        <div class="operacoes">
+            <button id="btn40" class="certo">x9</button>
+            <button id="btn41" class="certo">/3</button>
+            <button id="btn42" class="certo">-2</button>
+            <button id="btn43" class="errado">/</button>
+            <button id="btn44" class="errado">+</button>
+            <button id="btn45" class="errado">10</button>
+            <button id="btn46" class="errado">+12</button>
+            <button id="btn47" class="certo">9</button>
+            <button id="btn48" class="errado">+8</button>
+            <button id="btn49" class="errado">37</button>
+            <button id="btn50" class="certo">20</button>
+            <button id="btn51" class="errado">4</button>
+            <button id="btn52" class="errado">16</button>
+            <button id="btn53" class="certo">-</button>
+            <button id="btn54" class="certo">x</button>
+            <button id="btn55" class="certo">x3</button>
+
+        </div>
+        <div class="menu_inferior">
+            <button class="voltar"><img src="icones/left-arrow2.svg"></button>
+            <button id="conf5" class="configuracao"><img src="icones/music.svg"></button>
+            <button class="dica"><img src="icones/lamp.svg"></button>
+        </div>
+    </section>
+
+    <!-- Tela da vitótia -->
+    <section class="vitoria">
+        <div class="vitoria_conteudo">
+            <h1>PARABÉNS, VOCÊ ACERTOU!</h1>
+            <div class="estrelas">
+                <span class="estrela1"></span>
+                <span class="estrela2"></span>
+                <span class="estrela3"></span>
+            </div>
+
+            <h2>DICA: <span class="dicas">0</span></h2>
+            <h2>TEMPO: <span class="tempo"></span></h2>
+            <button class="sair">Sair</button>
+        </div>
+    </section>
+
+    <!-- Tela da derrota -->
+    <section class="derrota">
+        <div class="vitoria_conteudo">
+            <h1>VOCÊ ERROU!</h1>
+            <div class="estrelas">
+                <img src="icones/star2.svg">
+                <img src="icones/star2.svg">
+                <img src="icones/star2.svg">
+            </div>
+
+            <h2>DICA: <span>Não</span></h2>
+            <h2>TEMPO: <span>00:00</span></h2>
+            <button class="sair">Sair</button>
+        </div>
+    </section>
+
+    <script src="javascript/plugins.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+            $("section.inicio").show();
+        });
+
+        var musica = new Audio('musicas/Good Starts.mp3');
+        musica.loop = true;
+
+        $("section.inicio button.jogar, section.inicio button.botao_musica, section.conf button.musica_lig").on("click", function(){   
+            musica.play();
+        });
+
+        $("section.conf button.musica_des").on("click", function(){   
+            musica.pause();
+        });
+
+        var volumeMusica = document.getElementById("volMus");
+
+        volumeMusica.addEventListener("input", function(){
+            musica.volume = document.querySelector("#volMus").value;
+        });
+
+        var acertos = 0;
+        
+        var audio = new Audio("");
+        var audioLig = true;
+
+        $("section.conf button.som_des").on("click", function(){   
+            audioLig = false;
+        });
+
+        $("section.conf button.som_lig").on("click", function(){   
+            audioLig = true;
+        });
+
+        var dica;
+
+        acionarBotaoCerto("fase1", 2, "equacao1");
+        acionarBotaoCerto("fase2", 4, "equacao2");
+        acionarBotaoCerto("fase3", 5, "equacao3");
+        acionarBotaoCerto("fase4", 6, "equacao4");
+        acionarBotaoCerto("fase5", 7, "equacao5");
+
+        function acionarBotaoCerto(nomeClasse, numAcertos, classeSpan){
+            $("section."+nomeClasse+" div.operacoes button.certo").on("click", function(){
+                acertos++;
+                $(this).css({opacity: 0.5});
+
+                if(audioLig){
+                    audio = new Audio('musicas/correto.mp3');
+                    audio.play();
+                }
+                
+                var minFinal = 0;
+                var segFinal = 0;
+                var tempoFinal;
+
+                if(acertos > numAcertos){
+                    $("section").hide();
+                    $("section.vitoria").show();   
+
+                    if(audioLig){
+                        audio.volume = 0.2;
+                        audio = new Audio("musicas/win.wav");
+                        audio.play();
+                    }
+
+                    minFinal = parseInt($("section."+nomeClasse+" span.temporizadorMin").text());
+                    segFinal = parseInt($("section."+nomeClasse+" span.temporizadorSeg").text());
+
+                    if(minFinal < 10 && segFinal < 10){
+                        $("section.vitoria span.tempo").text("0" + minFinal + ":0" + segFinal);
+
+                    }else if(minFinal > 10 && segFinal > 10){
+                        $("section.vitoria span.tempo").text(minFinal + ":" + segFinal);
+
+                    }else if(minFinal > 10 && segFinal < 10){
+                        $("section.vitoria span.tempo").text(minFinal + ":0" + segFinal);
+
+                    }else if(minFinal < 10 && segFinal > 10){
+                        $("section.vitoria span.tempo").text("0" + minFinal + ":" + segFinal);
+                    }
+
+                    acertos = 0;
+                    $("section."+nomeClasse+" div.operacoes button.certo").css({opacity: 1});
+                    $("section."+nomeClasse+" div.operacoes button.errado").css({opacity: 1});
+
+                    if(dica){
+                        $("section.vitoria span.estrela1").append("<img src='icones/star2.svg'>");
+                        $("section.vitoria span.estrela2").append("<img src='icones/star2.svg'>");
+                        $("section.vitoria span.estrela3").append("<img src='icones/star2.svg'>");
+
+                        $("section.vitoria span.dicas").text("Sim");
+                    }else{
+                        $("section.vitoria span.dicas").text("Não");
+                        if(minFinal < 1){
+                            $("section.vitoria span.estrela1").append("<img src='icones/star1.svg'>");
+                            $("section.vitoria span.estrela2").append("<img src='icones/star1.svg'>");
+                            $("section.vitoria span.estrela3").append("<img src='icones/star1.svg'>");
+
+                        }else if(minFinal > 1 && minFinal < 2){
+                            $("section.vitoria span.estrela1").append("<img src='icones/star1.svg'>");
+                            $("section.vitoria span.estrela2").append("<img src='icones/star1.svg'>");
+                            $("section.vitoria span.estrela3").append("<img src='icones/star2.svg'>");
+
+                        }else if(minFinal > 2){
+                            $("section.vitoria span.estrela1").append("<img src='icones/star2.svg'>");
+                            $("section.vitoria span.estrela2").append("<img src='icones/star2.svg'>");
+                            $("section.vitoria span.estrela3").append("<img src='icones/star2.svg'>");                      
+                        }
+                    }
+                }
+
+                var texto = $(this).text();
+
+                $("section."+nomeClasse+" span."+classeSpan).text($("section."+nomeClasse+" span."+classeSpan).text() + texto);
+            });
+
+            $("section."+nomeClasse+" button.dica").on("click", function(){
+                $("section."+nomeClasse+" div.operacoes button.errado").css({opacity: 0.5});
+                $("section."+nomeClasse+" div.quadro").css({opacity: 1});
+                dica = true;
+            });
+        }
+
+        $("section.fase1 button.configuracao, section.fase2 button.configuracao, section.fase3 button.configuracao, " +
+        "section.fase4 button.configuracao, section.fase5 button.configuracao").on("click", function(){
+            $("section").hide();
+            $("section.conf").show();
+            document.getElementById("voltarJogo").style.display = "inline";
+            tela = "section." + pegarClasse(document.getElementById(this.id));
+        });
+
+        $("section.fase1 button.voltar, section.fase2 button.voltar, section.fase3 button.voltar, " +
+        "section.fase4 button.voltar, section.fase5 button.voltar").on("click", function(){
+            $("section").hide();
+            $("section.fases").show();
+        });
+
+        $("section.conf button.voltarJogo").on("click", function(){
+            $("section").hide();
+            $("" + tela).show();
+        });
+
+        $("section.derrota button.sair, section.vitoria button.sair").on("click", function(){
+            $("section").hide();
+            $("section.inicio").show();
+
+            $("section.vitoria span.estrela1").empty();
+            $("section.vitoria span.estrela2").empty();
+            $("section.vitoria span.estrela3").empty(); 
+
+            $("div.operacoes button.certo").css({opacity: 1});
+            tentativas = 0;
+            acertos = 0;
+            $("span.equacao1, span.equacao2, span.equacao3, span.equacao4, span.equacao5").empty();
+        });
+
+        var telaFase;
+        $("div.operacoes button.errado").on("click", function(){
+            $("section").hide();
+            telaFase = "section." + pegarClasse(document.getElementById(this.id));
+            $("section." + telaFase).show();
+            $("section.derrota").show();
+            if(audioLig){
+                audio = new Audio("musicas/derrota.mp3");
+                audio.play();
+            }
+        });
+
+        var tela = "";
+
+        $("section.inicio button.jogar").on("click", function(){
+            $("section").hide();
+            $("section.fases").show();
+        });
+
+        $("section.inicio div.opcoes button.botao_musica").on("click", function(){
+            $("section").hide();
+            $("section.conf").show();
+            document.getElementById("voltarJogo").style.display = "none";
+        });
+
+        $("section.inicio div.opcoes button.botao_info").on("click", function(){
+            $("section").hide();
+            $("section.info").show();
+            
+        });
+
+        $("img.flechaVoltarMenu").on("click", function(){
+            $("section").hide();
+            $("section.inicio").show();
+        });
+
+
+        $("section.niveis button.nivel1").on("click", function(){
+            $("section").hide();
+            $("section.fases1").show();
+        });
+
+        $("section.niveis button.nivel2").on("click", function(){
+            $("section").hide();
+            $("section.fases2").show();
+        
+        });
+
+        $("section.niveis button.nivel3").on("click", function(){
+            $("section").hide();
+            $("section.fases3").show();
+
+        });
+
+        $("section.niveis button.nivel4").on("click", function(){
+            $("section").hide();
+            $("section.fases4").show();
+        
+        });
+
+        $("section.niveis button.nivel5").on("click", function(){
+            $("section").hide();
+            $("section.fases5").show();
+
+        });
+
+        $("section.fases1 img.flechaVoltar, section.fases2 img.flechaVoltar, section.fases3 img.flechaVoltar,"+
+        "section.fases4 img.flechaVoltar, section.fases5 img.flechaVoltar").on("click", function(){
+            $("section").hide();
+            $("section.niveis").show();
+        });
+
+        var cronometro;
+        var min = 0;
+        var soma = 0;
+
+
+        irParaFase("fase1");
+        irParaFase("fase2");
+        irParaFase("fase3");
+        irParaFase("fase4");
+        irParaFase("fase5");
+
+        function irParaFase(nomeFase){
+            $("section.fases button."+nomeFase).on("click", function(){
+
+                $("section").hide();
+                $("section."+nomeFase).show();
+
+                clearInterval(cronometro);
+                soma = 0;
+                min = 0;
+                $("section."+nomeFase+" span.temporizadorSeg").text("00");
+                $("section."+nomeFase+" span.temporizadorMin").text("00");
+            
+                cronometro = setInterval(function(){
+            
+                    var tempo = parseInt($("section."+nomeFase+" span.temporizadorSeg").text());
+                    soma = tempo + 1;
+
+                    if(soma < 10) {
+                        soma = "0" + soma;
+                    }
+
+                    if(soma > 59){
+                        min++;
+                        if(min < 10) {
+                            min = "0" + min;
+                        }
+                        soma = 00;
+                        $("section."+nomeFase+" span.temporizadorMin").text(min);
+                    }
+                    $("section."+nomeFase+" span.temporizadorSeg").text(soma);
+                }, 1000);
+            });
+        }
+
+        function pegarClasse(filho) {
+            var pai = filho.parentElement;
+            var avo = pai.parentElement;
+            var classe = avo.getAttribute('class');
+            return classe;
+        }
+
+    </script>
+</body>
+</html>

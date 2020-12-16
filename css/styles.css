@@ -1,0 +1,457 @@
+section{
+    display: none;
+}
+
+section, body{
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+/* ========= TELA INÍCIO ========= */
+section.inicio{
+    text-align: center;
+    background: url(../Imagens/fundo_inicio.jpg) no-repeat center bottom;
+    background-size: 70vh;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+}
+
+section.inicio h1{
+    color: white;
+    font-size: 4em;
+    margin: 10vh auto;
+    font-family: Miriam Mono CLM BoldOblique;
+}
+
+section.inicio button.jogar{
+    border: 2px solid #515151;
+    font-size: 2.5em;
+    color: black;
+    box-shadow: 4px 4px 2px -2px rgba(0,0,0,0.5);
+    width: 60vw;
+    margin: 10vw auto;
+    padding: 15px 0;
+    border-radius: 10px;
+    font-family: Miriam Mono CLM BoldOblique;
+}
+
+section.inicio div.opcoes{
+    display: block;
+}
+
+section.inicio button.botao_musica{
+    border-radius: 50px;
+    height: 85px;
+    width: 85px;
+    background-color: #32CD32;
+    border: 4px solid #039E03;
+    margin: 0 40px;
+}
+
+section.inicio img.icone_musica{
+    height: 55px;
+    width: 55px;
+    margin-top: 4px;
+    margin-right: 10px;
+}
+
+section.inicio button.botao_info{
+    border-radius: 50px;
+    height: 85px;
+    width: 85px;
+    background-color: #FFA500;
+    border: 4px solid #CF8701;
+    margin: 0 40px;
+}
+
+section.inicio img.icone_info{
+    height: 60px;
+    width: 60px;
+    margin-top: 4px;
+}
+
+/* ========= Tela Informarções ========= */
+section.info{
+    background: url(../Imagens/papel-quadriculado.png) no-repeat center bottom;
+    background-size: 70vh;
+    height: 100vh;
+}
+
+section.info h1{
+    color: black;
+    font-size: 2em;
+    font-family: DJB Chalk It Up;
+}
+
+section.info h2{
+    color: black;
+    font-size: 1.2em;
+    font-family: DJB Chalk It Up;
+    margin: 20px 10px;
+    line-height: 27px;
+}
+
+section.info div.topo{
+    display: flex;
+    padding: 20px;
+}
+
+section.info div.topo img{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+section.info div.descricao{
+    width: 90vw;
+    height: 80vh;
+    margin: 10px auto;
+}
+
+/* ========= Tela configurações ========= */
+section.conf{
+    background: url(../Imagens/papel-quadriculado.png) no-repeat center bottom;
+    background-size: 70vh;
+    height: 100vh;
+}
+
+section.conf h1{
+    color: black;
+    font-size: 1.9em;
+    font-family: DJB Chalk It Up;
+    margin-left: 20px;
+}
+
+section.conf div.topo{
+    display: flex;
+    padding: 20px;
+}
+
+section.conf div.topo img{
+    width: 30px;
+    height: 30px;
+}
+
+section.conf div.conf_musica{
+    display: block;
+    text-align: center;
+}
+
+section.conf div.conf_musica button{
+    font-family: DJB Chalk It Up;
+    color: black;
+    font-size: 1.9em;
+    border: 3px solid black;
+    background-color: white;
+    border-radius: 20px;
+    width: 140px;
+    height: 50px;
+    margin: 20px 15px;
+}
+
+section.conf div.vol{
+    text-align: center;
+    margin: 30px auto;
+}
+.slider {
+    -webkit-appearance: none;
+    width: 75%;
+    height: 7px;
+    border-radius: 5px;  
+    background: rgb(158, 158, 158);
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; 
+    background: black;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+section.conf div.centralizar{
+    text-align: center;
+    margin: 50px auto;
+}
+
+section.conf button.voltarJogo{
+    font-family: DJB Chalk It Up;
+    color: black;
+    font-size: 1.9em;
+    border: 3px solid black;
+    background-color: white;
+    border-radius: 20px;
+    width: 200px;
+    height: 50px;
+
+}
+
+/* ========= Tela níveis e fases ========= */
+section.fases{
+    background: url(../Imagens/papel-quadriculado.png) repeat-x center bottom;
+    background-size: 70vh;
+    height: 100vh;
+}
+
+section.fases h1{
+    color: black;
+    font-size: 1.9em;
+    font-family: DJB Chalk It Up;
+    margin-left: 20px;
+}
+
+section.fases div.topo{
+    display: flex;
+    padding: 20px;
+}
+
+section.fases div.topo img{
+    width: 30px;
+    height: 30px;
+}
+
+section.fases button {
+    text-align: left;
+    width: 80%;
+    height: 12%;
+    font-family: DJB Chalk It Up;
+    font-size: 3em;
+    color: white;
+    border-radius: 20px;
+    margin: 15px 20px;
+    padding-left: 30px;
+    border: none;
+}
+
+section.fases button.fase1{
+    background-color: #32CD32;
+    border: 4px solid #039E03;
+}
+
+section.fases button.fase2{
+    background-color: #00BFFF;
+    border: 4px solid #0079A1;
+}
+
+section.fases button.fase3{
+    background-color: #836FFF;
+    border: 4px solid #4C36D1;
+}
+
+section.fases button.fase4{
+    background-color: #FFA500;
+    border: 4px solid #CF8701;
+}
+
+section.fases button.fase5{
+    background-color: #FF6347;
+    border: 4px solid #D43F24;
+}
+
+/* ========= Telas de fases ========= */
+
+section.fase1, section.fase2, section.fase3, section.fase4, section.fase5{
+    background: url(../Imagens/papel-quadriculado.png) center top fixed;
+    background-repeat: repeat;
+    background-size: 70vh;
+    height: auto;
+    width: auto;
+    position: relative;
+}
+
+div.quadro{
+    background: url(../Imagens/Quadro.jpg) no-repeat center bottom;
+    background-size: 100vw 35vh;
+    top: 0;
+    width: 100vw;
+    height: 35vh;
+    position: fixed;
+    z-index: 1;
+}
+
+section.fase1 h1, section.fase2 h1, section.fase3 h1, section.fase4 h1, section.fase5 h1{
+    color: white;
+    font-size: 2.1em;
+    font-family: DJB Chalk It Up;
+    text-align: right;
+    margin: 7vh 10vw;
+}
+
+div.quadro h2{
+    color: white;
+    font-size: 1.5em;
+    font-family: DJB Chalk It Up;
+    margin: 20px 20px;
+}
+
+div.quadro img{
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+}
+
+div.quadro span, h3{
+    color: white;
+    font-size: 1.5em;
+    font-family: DJB Chalk It Up;
+    display: inline;
+}
+
+div.operacoes{
+    margin-top: 64%;
+    text-align: center;
+}
+
+div.operacoes{
+    height: 400px;
+}
+
+section.fase1 div.operacoes{
+    height: 400px;
+}
+
+section.fase2 div.operacoes{
+    height: 450px;
+}
+
+section.fase3 div.operacoes{
+     height: 620px;
+}
+
+section.fase4 div.operacoes{
+    height: 700px;
+}
+
+section.fase5 div.operacoes{
+    height: 800px;
+} 
+
+div.operacoes button{
+    width: 170px;
+    height: 70px;
+    border-radius: 17px;
+    margin: 10px 4px;
+    font-family: DJB Chalk It Up;
+    color: white;
+    font-size: 2em;
+}
+
+section.fase1 button, section.fase1 div.menu_inferior{
+    background-color: #32CD32;
+    border: 4px solid #039E03;
+}
+
+section.fase2 button, section.fase2 div.menu_inferior{
+    background-color: #00BFFF;
+    border: 4px solid #0079A1;
+}
+
+section.fase3 button, section.fase3 div.menu_inferior{
+    background-color: #836FFF;
+    border: 4px solid #4C36D1;
+}
+
+section.fase4 button, section.fase4 div.menu_inferior{
+    background-color: #FFA500;
+    border: 4px solid #CF8701;
+}
+
+section.fase5 button, section.fase5 div.menu_inferior{
+    background-color: #FF6347;
+    border: 4px solid #D43F24;
+}
+
+.menu_inferior{
+    position: fixed;
+    bottom:0;
+    width:100%;
+    height: 10%;
+    text-align: center;
+}
+
+div.menu_inferior button{
+    width: 100px;
+    height: 55px;
+    border-radius: 17px;
+    margin: 5px 7px;
+}
+
+div.menu_inferior button img{
+    width: 45px;
+    height: 45px;
+}
+
+/* ========= Tela de vitória e derrota ========= */
+section.vitoria, section.derrota{
+    background: url(../Imagens/papel-quadriculado.png) no-repeat center bottom;
+    background-size: 100vh;
+    height: 100vh;
+    position: fixed;
+}
+section.vitoria div.vitoria_conteudo, section.derrota div.vitoria_conteudo{
+    background-color: #F3F338;
+    border: 3px solid #B1B100;
+    width: 80%;
+    height: 550px;
+    border-radius: 20px;
+    margin: 6vh auto;
+}
+
+section.vitoria div.vitoria_conteudo h1, section.derrota div.vitoria_conteudo h1{
+    color: black;
+    font-size: 2.6em;
+    font-family: DJB Chalk It Up;
+    margin: 30px auto 0px auto;
+    text-align: center;
+    line-height: 45px;
+}
+
+section.vitoria div.vitoria_conteudo h2, section.derrota div.vitoria_conteudo h2{
+    color: black;
+    font-size: 1.6em;
+    font-family: DJB Chalk It Up;
+    margin: 20px;
+}
+
+section.vitoria div.vitoria_conteudo div.estrelas, section.derrota div.vitoria_conteudo div.estrelas{
+    text-align: center;
+    margin: 20px auto;
+}
+
+section.vitoria div.vitoria_conteudo div.estrelas img, section.derrota div.vitoria_conteudo div.estrelas img{
+    width: 70px;
+    height: 70px;
+    margin: 10px 5px;
+}
+
+section.vitoria div.vitoria_conteudo button, section.derrota div.vitoria_conteudo button{
+    background-color: #F3F338;
+    border: 3px solid #B1B100;
+    border-radius: 10px;
+    width: 240px;
+    height: 60px;
+    margin: 5px 20px;
+    color: black;
+    font-size: 2em;
+    font-family: DJB Chalk It Up;
+}
+
+section.fase1 span.equacao1, section.fase2 span.equacao2, section.fase3 span.equacao3, section.fase4 span.equacao4, section.fase5 span.equacao5{
+    display: inline;
+    margin: 0px;
+    font-size: 1em;
+}
